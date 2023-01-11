@@ -47,11 +47,11 @@ function TodoListCard() {
         [items],
     );
 
-    document.wtite("ToDo App By Masachika Masuda (xxmrkn)")A
 
     if (items === null) return 'Loading...';
 
     return (
+        document.wtite("ToDo App By Masachika Masuda (xxmrkn)")A
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
