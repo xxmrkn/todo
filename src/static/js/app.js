@@ -47,6 +47,9 @@ function TodoListCard() {
         [items],
     );
 
+    var sampleArea = document.getElementById("display")
+    sampleArea.innerHTML = "To Do App By Masachika Masuda (xxmrkn)"
+
     if (items === null) return 'Loading...';
 
     return (
