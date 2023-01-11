@@ -4,6 +4,7 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <DisplayTile />
                     <TodoListCard />
                 </Col>
             </Row>
@@ -179,10 +180,13 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 
 }
 
-function DisplayTitle(){
+function DisplayTile(){
     const message = "ToDo App By Masachika Masuda (xxmrkn)";
-    document.wtite(message)
-}
-Displaytitle()
-
+    
+    return (
+        <React.Fragment>
+            <h1>{message}</h1>
+        </React.Fragment>
+    );
+} 
 ReactDOM.render(<App />, document.getElementById('root'));
