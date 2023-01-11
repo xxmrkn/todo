@@ -4,7 +4,7 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    <DisplayTile />
+                    <DisplayTitle />
                     <TodoListCard />
                 </Col>
             </Row>
@@ -180,7 +180,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 
 }
 
-function DisplayTile(){
+function DisplayTitle(){
     const message = "ToDo App By Masachika Masuda (xxmrkn)";
     
     return (
