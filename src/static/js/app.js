@@ -51,7 +51,6 @@ function TodoListCard() {
     if (items === null) return 'Loading...';
 
     return (
-        document.wtite("ToDo App By Masachika Masuda (xxmrkn)")A
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
@@ -177,6 +176,12 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
             </Row>
         </Container>
     );
+
 }
 
+function DisplayTile(){
+    const message = "ToDo App By Masachika Masuda (xxmrkn)";
+    
+    document.wtite(message)
+} 
 ReactDOM.render(<App />, document.getElementById('root'));
