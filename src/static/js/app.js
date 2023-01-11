@@ -179,9 +179,10 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 
 }
 
-function DisplayTile(){
+function DisplayTitle(){
     const message = "ToDo App By Masachika Masuda (xxmrkn)";
-    
     document.wtite(message)
-} 
+}
+Displaytitle()
+
 ReactDOM.render(<App />, document.getElementById('root'));
